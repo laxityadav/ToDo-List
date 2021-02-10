@@ -1,0 +1,14 @@
+<% layout('boilerplate')%>
+    <div class="col-md-6 offset-md-3">
+        <form action="/<%=item._id%>?_method=PUT" method="POST">
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="description"
+                    required><%=item.desc%></textarea>
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-success">Update</button>
+            </div>
+        </form>
+    </div>
